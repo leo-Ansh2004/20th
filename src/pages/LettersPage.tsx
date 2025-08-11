@@ -15,7 +15,7 @@ export const LettersPage = () => {
       title: "Sweet Note 💕",
       content: (
         <div>
-          <p className="mb-4">Navssssssss,</p>
+          <p className="mb-4">My dearest friend,</p>
           <p className="mb-4">
             Today marks another year of your amazing journey through life. 
             I want you to know how grateful I am to have you in my life. 
