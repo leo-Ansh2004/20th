@@ -61,7 +61,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Birthday theme colors
+				'birthday-red': 'hsl(var(--birthday-red))',
+				'birthday-white': 'hsl(var(--birthday-white))',
+				'birthday-pink': 'hsl(var(--birthday-pink))',
+				'birthday-rose': 'hsl(var(--birthday-rose))',
+				'balloon-red': 'hsl(var(--balloon-red))',
+				'balloon-blue': 'hsl(var(--balloon-blue))',
+				'balloon-yellow': 'hsl(var(--balloon-yellow))',
+				'balloon-green': 'hsl(var(--balloon-green))',
+				'balloon-purple': 'hsl(var(--balloon-purple))',
+				'heart-pink': 'hsl(var(--heart-pink))',
+				'heart-rose': 'hsl(var(--heart-rose))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
