@@ -47,7 +47,13 @@ const Index = () => {
           </BirthdayButton>
         )}
         
-        {/* Image Placeholders */}
+        {/* Image Placeholders - Replace these with your own images */}
+        {/* 
+        To add your own images:
+        1. Put your images in src/assets/ folder (e.g., photo1.jpg, photo2.jpg, photo3.jpg)
+        2. Import them at the top: import photo1 from "@/assets/photo1.jpg";
+        3. Replace ImagePlaceholder components with: <img src={photo1} alt="Description" className="w-full h-64 object-cover rounded-xl shadow-lg animate-fade-in" />
+        */}
         {showImages && (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 w-full max-w-4xl">
             <ImagePlaceholder isVisible={showImages} className="w-full h-64" />

@@ -1,22 +1,27 @@
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 interface BirthdayButtonProps {
-  onClick?: () => void;
   children: React.ReactNode;
-  variant?: "primary" | "secondary";
+  onClick?: () => void;
   className?: string;
+  variant?: "primary" | "secondary";
 }
 
 export const BirthdayButton = ({ 
-  onClick, 
   children, 
-  variant = "primary", 
-  className = "" 
+  onClick, 
+  className,
+  variant = "primary" 
 }: BirthdayButtonProps) => {
   return (
     <Button
       onClick={onClick}
-      className={`btn-birthday ${variant === "secondary" ? "bg-secondary text-secondary-foreground" : ""} ${className}`}
+      className={cn(
+        "btn-birthday",
+        variant === "secondary" && "bg-birthday-red text-white border-white hover:bg-birthday-red/90",
+        className
+      )}
     >
       {children}
     </Button>
